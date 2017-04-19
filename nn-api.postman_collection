@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Python Neural Network",
+		"_postman_id": "e17a0cf2-6f2a-d32e-0187-3739aaa9c902",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /predict",
+			"request": {
+				"url": "http://localhost:5000/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"input\": [\"32\",\"services\",\"divorced\",\"basic.9y\",\"no\",\"unknown\",\"yes\",\"cellular\",\"dec\",\"mon\",\"110\",\"1\",\"11\",\"0\",\"nonexistent\",\"-1.8\",\"94.465\",\"-36.1\",\"0.883\",\"5228.1\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /health",
+			"request": {
+				"url": "http://localhost:5000/health",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"input\": [\"32\",\"services\",\"divorced\",\"basic.9y\",\"no\",\"unknown\",\"yes\",\"cellular\",\"dec\",\"mon\",\"110\",\"1\",\"11\",\"0\",\"nonexistent\",\"-1.8\",\"94.465\",\"-36.1\",\"0.883\",\"5228.1\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST /predict (success)",
+			"request": {
+				"url": "http://localhost:5000/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"input\": [\"32\",\"services\",\"divorced\",\"basic.9y\",\"no\",\"unknown\",\"yes\",\"cellular\",\"dec\",\"mon\",\"110\",\"1\",\"11\",\"0\",\"nonexistent\",\"-1.8\",\"94.465\",\"-36.1\",\"0.883\",\"5228.1\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
